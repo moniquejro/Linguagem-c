@@ -9,7 +9,7 @@ int main ()
     
     printf("O inteiro é: %i.\n",varint);
     printf("O float é: %f.\n", varfloat);
-    print("O char é: %c.\n", varchar);
+    printf("O char é: %c.\n", varchar);
 
     return 0;
 }
