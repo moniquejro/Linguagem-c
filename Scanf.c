@@ -2,19 +2,31 @@
 
 int main ()
 {
-    int base;
-    int altura;
-    int area;
+    int n1;
+    int n2;
+    int result;
+    int resto;
 
-    printf("Digite o valor da base:");
-    scanf("%i", &base);
+    printf("Vou adivinhar se o numero que voce pensou é par ou impar. Vamos la!\n");
+    printf("Digite um numero:");
+    scanf("%i", &n1);
 
-    printf("Digite o valor da altura:");
-    scanf("%i", &altura);
+    result = n1 / 2;
+    
 
-    area = base * altura;
-
-    printf("O valor da area do retangulo é de: %i\n", area);
-
+    if (result != 0)
+    {
+        printf("Seu número dividido por 2 é = a: %i, logo é impar.\n", result);
+    }
+    else 
+    {
+        printf("Seu numero dividido por 2 é = a: %i, logo é par.\n", result);
+    }
+    
+/*
+    printf("\nAgora digite outro numero:");
+    scanf("%i", &n2);
+    printf("O valor da area do retangulo é de: %i\n", n1);
+*/
     return 0;
 }
