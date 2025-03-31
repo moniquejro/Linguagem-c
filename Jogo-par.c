@@ -12,18 +12,17 @@ int main ()
     switch (again)
     {
     case 1:
-        printf("Vou adivinhar se o numero é par ou impar\nMe fale um numero:");
+        printf("Vou adivinhar se o numero é par ou impar\nMe fale um numero inteiro:");
         scanf("%i", &num);
 
         resto = num % 2;
 
         if (resto == 0)
         {
-            printf("O numero %i é par - %i,- %i,- %i\n",num, resto, num, again);
-            printf("Quer jogar de novo?\n");
-            scanf("%i", &again);
-        } else {
-            printf("O numero %i é impar - %i,- %i,- %i\n", num, resto, num, again);
+            printf("O numero %i é par.\n",num);
+        } 
+        else {
+            printf("O numero %i é impar.\n", num);
         }
 
         break;
